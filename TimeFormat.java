@@ -18,15 +18,15 @@ public class TimeFormat {
 		} else {
 			min = String.valueOf(minutes);
 		}
-		if (hours == 0) {
-			System.out.println("12:" + min + " AM");
+		if (hours == 0 || hours < 10) {
+			System.out.println("0" + hours +":" + min + " AM");
 		} else if (hours == 12) {
 			System.out.println(hours + ":" + min + " PM");
 		} else if (hours > 12) {
 			hours -= 12;
 			System.out.println(hours + ":" + min + " PM");
 		} else {
-			System.out.println("0" + hours + ":" + min + " AM");
+			System.out.println(hours + ":" + min + " AM");
 		}
 	}
 }
