@@ -25,10 +25,12 @@ public class TimeFormat {
 			} else {
 				System.out.println(hours + ":" + min + " PM");
 			}
-		} else if ( hours < 12) {
+		} else if (hours < 12) {
 			System.out.println("0" + hours + ":" + min + " AM");
 		} else if (hours == 24) {
 			System.out.println( "00:" + min + " AM");
+		} else if (hours == 12) {
+			System.out.println(hours + ":" + min + " PM");
 		}
 	}
 }
