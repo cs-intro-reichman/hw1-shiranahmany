@@ -8,6 +8,6 @@ public class Bill3 {
 	    int bill  = Integer.parseInt(args[3]);
 		double bill2  = bill/3.0; 
 		bill2 = Math.ceil(bill2);
-		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": each of u has to pay " + bill2 + "Shekels each");
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": each of u has to pay " + bill2 + " Shekels each");
 	}
 }
